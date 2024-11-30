@@ -1,5 +1,6 @@
 .Pl {
 	opacity: 100%;
+	overflow-x: hidden;
 }
 
 .stars-layer {
