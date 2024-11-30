@@ -8,7 +8,7 @@ const createStars = (layer, numStars, sizeRange) => {
     star.style.width = `${size}px`;
     star.style.height = `${size}px`;
     star.style.top = `${Math.random() * 134}vh`;
-    star.style.left = `${Math.random() * 134}vw`;
+    star.style.left = `${Math.random() * 100}vw`;
     star.style.animationDelay = `${Math.random() * 20}s`; // Random animation delay
 
     layer.appendChild(star);
