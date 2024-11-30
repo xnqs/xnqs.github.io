@@ -25,12 +25,18 @@ createStars(layer1, 100, 1); // Small stars
 createStars(layer2, 70, 2);  // Medium stars
 createStars(layer3, 50, 3);  // Large stars
 
-// Mouse parallax effect
-document.body.addEventListener('mousemove', (e) => {
-  const x = (e.clientX / window.innerWidth) - 0.5;
-  const y = (e.clientY / window.innerHeight) - 0.5;
+function isMobileDevice() {
+  return /Mobi|Android/i.test(navigator.userAgent) || window.innerWidth <= 768;
+}
 
-  layer1.style.transform = `translate(${x * 10}px, ${y * 10}px)`;
-  layer2.style.transform = `translate(${x * 20}px, ${y * 20}px)`;
-  layer3.style.transform = `translate(${x * 30}px, ${y * 30}px)`;
-});
+// Mouse parallax effect
+if (!isMobileDevice()) {
+  document.body.addEventListener('mousemove', (e) => {
+    const x = (e.clientX / window.innerWidth) - 0.5;
+    const y = (e.clientY / window.innerHeight) - 0.5;
+
+    layer1.style.transform = `translate(${x * 10}px, ${y * 10}px)`;
+    layer2.style.transform = `translate(${x * 20}px, ${y * 20}px)`;
+    layer3.style.transform = `translate(${x * 30}px, ${y * 30}px)`;
+  });
+}
