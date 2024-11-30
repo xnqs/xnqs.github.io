@@ -1,0 +1,33 @@
+.Pl {
+	opacity: 100%;
+}
+
+.stars-layer {
+	position: absolute;
+	width: 100%;
+	height: 250%;
+	pointer-events: none;
+	will-change: transform;
+	/*overflow: hidden;*/
+}
+
+/* Bloom effect for stars */
+.star {
+	position: absolute;
+	background: white;
+	border-radius: 50%;
+	box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+	animation: moveUp 20s linear infinite;
+	overflow: hidden;
+}
+
+/* Stars moving up */
+@keyframes moveUp {
+	0% {
+		transform: translateY(100vh);
+	}
+	100% {
+		transform: translateY(-10%);
+	}
+}
+

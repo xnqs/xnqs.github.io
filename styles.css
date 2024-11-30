@@ -1,0 +1,92 @@
+/* styles.css */
+@import url("stars.css");
+@import url("waves.css");
+
+@font-face {
+	font-family: 'Nexa-ExtraLight';
+	src: url('Nexa-ExtraLight.ttf');
+}
+
+@font-face {
+	font-family: 'Nexa-Heavy';
+	src: url('Nexa-Heavy.ttf');
+}
+
+body {
+	font-family: Nexa-ExtraLight;
+	background: #000020;
+	margin: 0;
+	padding: 0;
+	line-height: 1.6;
+	color: #ffffff;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+/* header */
+header {
+	position: relative;
+	overflow: hidden;
+	font-family: Nexa-Heavy;
+	background: #000040;
+	color: white;
+	text-align: center;
+	padding: 0rem;
+}
+
+nav ul {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	padding: 0;
+	background: #040404;
+	margin: 0;
+}
+
+nav ul li {
+	margin: 0 1rem;
+}
+
+nav ul a {
+	color: white;
+}
+
+a {
+	color: hotpink;
+}
+
+section {
+	padding: 2rem;
+	margin: 1rem auto;
+	max-width: 800px;
+}
+
+h2 {
+	color: #aaaaff;
+}
+
+h3 {
+	color: #aaaaff;
+}
+
+footer {
+	text-align: center;
+	padding: 1rem;
+	background: #000000;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222222;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
