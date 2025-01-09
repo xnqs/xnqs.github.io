@@ -4,12 +4,12 @@
 
 @font-face {
 	font-family: 'Nexa-ExtraLight';
-	src: url('Nexa-ExtraLight.ttf');
+	src: url('../fonts/Nexa-ExtraLight.ttf');
 }
 
 @font-face {
 	font-family: 'Nexa-Heavy';
-	src: url('Nexa-Heavy.ttf');
+	src: url('../fonts/Nexa-Heavy.ttf');
 }
 
 body {
@@ -29,12 +29,22 @@ h1 {
 /* header */
 header {
 	position: relative;
+	width: 100%;
 	overflow: hidden;
 	font-family: Nexa-Heavy;
 	background: #000040;
 	color: white;
 	text-align: center;
 	padding: 0rem;
+	transition: 0.5s;
+	z-index: 1;
+}
+
+nav {
+	position: sticky;
+	top: 0;
+	width: 100%;
+	z-index: 1;
 }
 
 nav ul {

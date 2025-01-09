@@ -7,8 +7,8 @@ const createStars = (layer, numStars, sizeRange) => {
     const size = Math.random() * sizeRange + 1; // Random size between 1px and sizeRange
     star.style.width = `${size}px`;
     star.style.height = `${size}px`;
-    star.style.top = `${Math.random() * 134}vh`;
-    star.style.left = `${Math.random() * 100}vw`;
+    star.style.top = `${Math.random() * 100}%`;
+    star.style.left = `${Math.random() * 100}%`;
     star.style.animationDelay = `${Math.random() * 20}s`; // Random animation delay
 
     layer.appendChild(star);
@@ -26,7 +26,7 @@ createStars(layer2, 70, 2);  // Medium stars
 createStars(layer3, 50, 3);  // Large stars
 
 function isMobileDevice() {
-  return /Mobi|Android/i.test(navigator.userAgent) || window.innerWidth <= 768;
+  return /Mobi|Android/i.test(navigator.userAgent);
 }
 
 // Mouse parallax effect
